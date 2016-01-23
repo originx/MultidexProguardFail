@@ -26,7 +26,11 @@ android {
         release {
             minifyEnabled true
             shrinkResources true
-            //  multiDexKeepProguard file('proguard-rules.pro')
+
+            //FIXME these do not work?
+            // multiDexKeepProguard file('proguard-rules.pro')
+            // multiDexKeepProguard file('proguard-rules-multidex.pro')
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
