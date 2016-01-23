@@ -6,7 +6,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    lintOptions{
+    lintOptions {
         abortOnError false
     }
     compileSdkVersion 'Google Apis:Google Apis:23'
@@ -26,7 +26,7 @@ android {
         release {
             minifyEnabled true
             shrinkResources true
-          //  multiDexKeepProguard file('proguard-rules.pro')
+            //  multiDexKeepProguard file('proguard-rules.pro')
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -61,5 +61,5 @@ dependencies {
     compile 'com.google.dagger:dagger:2.0'
     apt 'com.google.dagger:dagger-compiler:2.0'
     provided 'org.glassfish:javax.annotation:10.0-b28'
-    goldCompile  project(path: ':mylibrary1', configuration: 'goldRelease')
+    goldCompile project(path: ':mylibrary1', configuration: 'goldRelease')
 }

@@ -7,7 +7,7 @@ public class World {
     public String world;
 
     public String getWorld() {
-        return world+"world";
+        return world + "world";
     }
 
     public void setWorld(String world) {
